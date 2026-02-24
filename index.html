@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Leonard — Creative Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Fredoka:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -14,10 +19,21 @@
 <!-- HERO -->
 <section class="hero">
 
-<h1 class="title floating">Leonard</h1>
-<p class="subtitle">creative technologist • designer • performer</p>
+    <div class="bg-text">PORTFOLIO</div>
 
-<div class="scroll">scroll ↓</div>
+<div class="hero-wrap">
+
+<img src="assets/profile.png" class="profile">
+
+<div class="hero-text">
+<h1>LEONARD AUGUSTE</h1>
+<p class="tagline">Creative Technologist & Performer</p>
+<p class="desc">
+I design, perform, and create digital experiences that merge art and technology.
+</p>
+</div>
+
+</div>
 
 </section>
 
@@ -55,45 +71,84 @@ I love singing, designing, and creating meaningful digital experiences.
 <!-- TIMELINE -->
 <section class="reveal">
 
-<h2 class="section-title">highlights 🎤</h2>
+<h2 class="section-title">achievements ✨</h2>
 
 <div class="timeline">
 
-<div class="event"><span>2014</span> Semi Finalist LA Junior</div>
-<div class="event"><span>2015</span> Favorite Winner</div>
-<div class="event"><span>2017</span> The Voice Kids Audition</div>
-<div class="event"><span>2022</span> RRI Medan Runner Up</div>
-<div class="event"><span>2023</span> Top 31 Karo Idol</div>
-<a href="https://youtu.be/FNx4sYJ9jDA?si=gdgFs2n_s8GkWgt7" class="event" target="_blank">
-<span>2023</span> Top 12 Golden Voice of Karo
-</a>
-
+<div class="event link">
+<img src="assets/goldenvoice.jpg">
+<div>
+<span>2025</span>
+<p>Top 12 Golden Voice of Karo <span class="badge">Featured</span></p>
+<a href="LINK_KAMU" target="_blank">klik detail ↗</a>
+</div>
 </div>
 
-</section>
-
-<!-- PROJECT -->
-<section class="card reveal">
-
-<h2>projects 🚀</h2>
-<p>cool works coming soon</p>
-
-</section>
-
-<section class="reveal">
-
-<h2 class="section-title">my works 🖼️</h2>
-
-<div class="gallery">
-
-<img src="assets/work1.jpg">
-<img src="assets/work2.jpg">
-<img src="assets/work3.jpg">
-<img src="assets/work4.jpg">
-
+<div class="event">
+<img src="assets/laacademia.jpg">
+<div>
+<span>2014</span>
+<p>La Academia Junior Semi Finalist</p>
+</div>
 </div>
 
+<div class="event link">
+<img src="assets/fogi.jpg">
+<div>
+<span>2015</span>
+<p>Juara Favorit Fogi</p>
+<a href="LINK_FOGI" target="_blank">klik detail ↗</a>
+</div>
+</div>
+
+<div class="event link">
+<img src="assets/thevoicekids.jpg">
+<div>
+<span>2017</span>
+<p>The Voice Kids Blind Audition <span class="badge">Featured</span></p>
+<a href="LINK_VOICE" target="_blank">klik detail ↗</a>
+</div>
+</div>
+
+<div class="event">
+<img src="assets/bintangradio.jpg">
+<div>
+<span>2022</span>
+<p>RRI Medan Runner Up <span class="badge">Featured</span></p>
+</div>
+</div>
+
+<div class="event">
+<img src="assets/31besar-karoidol.jpg">
+<div>
+<span>2023</span>
+<p>Top 31 Karo Idol</p>
+</div>
+</div>
+
+<div class="event">
+<img src="assets/gueststarkaroidol.jpg">
+<div>
+<span>2023</span>
+<p>Guest Star Karo Idol</p>
+</div>
+</div>
+
+<div class="event">
+<img src="assets/brayasara.jpg">
+<div>
+<span>2023</span>
+<p>Guest Star Brayasara</p>
+</div>
+</div>
+
+</div>
 </section>
+
+<!-- MODAL -->
+<div id="modal" onclick="closeModal()">
+<img id="modalImg">
+</div>
 
 <footer>
 made with ✨ by Leonard

@@ -1,3 +1,10 @@
+@font-face{
+font-family:"Schabo";
+src:url("fonts/SCHABO-XCondensed.woff") format("woff");
+font-weight:normal;
+font-style:normal;
+}
+
 body{
 margin:0;
 font-family:Poppins;
@@ -188,4 +195,299 @@ box-shadow:0 20px 40px rgba(0,0,0,.5);
 text-decoration:none;
 color:white;
 display:block;
+}
+
+.timeline{
+max-width:700px;
+margin:60px auto;
+}
+
+.event{
+display:flex;
+align-items:center;
+gap:20px;
+background:#1e293b;
+padding:15px;
+margin:20px 0;
+border-radius:20px;
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.event img{
+width:80px;
+height:80px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.event:hover{
+transform:translateX(10px) scale(1.02);
+background:#334155;
+}
+
+.event span{
+color:#ffc83d;
+font-weight:bold;
+}
+
+/* filter buttons */
+.filters{
+margin-top:20px;
+}
+
+.filters button{
+margin:10px;
+padding:10px 25px;
+border:none;
+border-radius:30px;
+background:#1e293b;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.filters button:hover{
+background:#ffc83d;
+color:#000;
+}
+
+/* events */
+
+.event{
+display:flex;
+align-items:center;
+gap:20px;
+background:#1e293b;
+padding:15px;
+margin:20px 0;
+border-radius:20px;
+cursor:pointer;
+transition:.3s;
+}
+
+.event:hover{
+transform:scale(1.03);
+background:#334155;
+}
+
+.event img{
+width:80px;
+height:80px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.event span{
+color:#ffc83d;
+font-weight:bold;
+}
+
+/* modal preview */
+
+#modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.8);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:999;
+}
+
+#modal img{
+max-width:80%;
+max-height:80%;
+border-radius:20px;
+box-shadow:0 0 40px black;
+}
+
+.timeline{
+max-width:700px;
+margin:60px auto;
+}
+
+.event{
+display:flex;
+gap:20px;
+align-items:center;
+background:#1e293b;
+padding:18px;
+margin:20px 0;
+border-radius:18px;
+transition:.3s;
+}
+
+.event:hover{
+transform:translateX(8px);
+background:#334155;
+}
+
+.event img{
+width:80px;
+height:80px;
+border-radius:15px;
+object-fit:cover;
+}
+
+.event span{
+color:#ffc83d;
+font-weight:bold;
+}
+
+.event p{
+margin:5px 0;
+}
+
+.event a{
+font-size:14px;
+color:#ffc83d;
+text-decoration:none;
+}
+
+.event a:hover{
+text-decoration:underline;
+}
+
+.link{
+border-left:4px solid #ffc83d;
+}
+
+.badge{
+background:#ffc83d;
+color:#000;
+padding:3px 10px;
+border-radius:20px;
+font-size:12px;
+margin-left:8px;
+}
+
+.tagline{
+opacity:.8;
+margin-top:-15px;
+font-weight:300;
+}
+
+.profile{
+width: 720px;px;
+max-width:90vw;
+display:block;
+animation:jiggle 3s ease-in-out infinite;
+}
+
+.profile:hover{
+transform:scale(1.05);
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:60px 10%;
+}
+
+.hero-wrap{
+display:flex;
+align-items:center;
+gap:80px;
+flex-wrap:wrap;
+}
+
+/* FOTO BESAR TANPA FRAME */
+
+.profile{
+width:420px;
+max-width:90vw;
+animation:jiggle 3s ease-in-out infinite;
+}
+
+/* TEXT */
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-family:"Lexend Deca", sans-serif;
+font-size:80px;
+margin:0;
+font-weight:700;
+}
+
+.tagline{
+margin:15px 0;
+opacity:.8;
+font-size:22px;
+}
+
+.desc{
+opacity:.7;
+line-height:1.7;
+font-size:18px;
+}
+
+/* JIGGLE HALUS */
+
+@keyframes jiggle{
+0%{transform:rotate(0deg)}
+50%{transform:rotate(1deg)}
+100%{transform:rotate(0deg)}
+}
+
+@media(max-width:768px){
+
+.hero-wrap{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text{
+text-align:center;
+}
+
+.hero-text h1{
+font-size:48px;
+}
+
+.profile{
+width:260px;
+}
+
+}
+
+@keyframes jiggle{
+0%{transform:rotate(0)}
+50%{transform:rotate(.6deg)}
+100%{transform:rotate(0)}
+}
+
+.bg-text{
+font-family:"Schabo";
+font-size:50vw;
+font-weight:700px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:#FFD84D;
+opacity:.15;
+filter:blur(3px);
+pointer-events:none;
+z-index:0;
+}
+
+@keyframes fadeText{
+to{
+opacity:0.08;
+}
+}
+
+.hero{
+position:relative;
+overflow:hidden;
 }
