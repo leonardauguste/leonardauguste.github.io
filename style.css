@@ -373,7 +373,7 @@ font-weight:300;
 }
 
 .profile{
-width: 720px;px;
+width: 720px;
 max-width:90vw;
 display:block;
 animation:jiggle 3s ease-in-out infinite;
@@ -490,4 +490,42 @@ opacity:0.08;
 .hero{
 position:relative;
 overflow:hidden;
+}
+
+@media(max-width:768px){
+
+.bg-text{
+font-size:32vw;
+line-height:.8;
+white-space:normal;
+text-align:center;
+}
+
+.bg-text::after{
+content:"FOLIO";
+display:block;
+}
+
+.bg-text{
+content:"PORT";
+}
+
+}
+
+@media(max-width:768px){
+.hero{
+padding:40px 20px;
+}
+
+.desc{
+font-size:16px;
+}
+
+.tagline{
+font-size:18px;
+}
+}
+
+.bg-text{
+letter-spacing:-5px;
 }
